@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "test:open": "playwright test --headed",
+    "test": "playwright test --project=chromium",
+    "test:ui": "playwright test --ui",
+    "test:repeat": "playwright test --repeat-each 100 -x"
+  },
   "devDependencies": {
     "@playwright/test": "^1.40.1",
     "@types/node": "^20.10.5"
